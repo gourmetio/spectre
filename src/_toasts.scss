@@ -1,9 +1,7 @@
 // Toasts
 .toast {
-  @include toast-variant($dark-color);
-  border: $border-width solid $dark-color;
+  @include toast-variant($gray-color-dark);
   border-radius: $border-radius;
-  color: $light-color;
   display: block;
   padding: $layout-spacing;
   width: 100%;
@@ -25,14 +23,15 @@
   }
 
   a {
-    color: $light-color;
-    text-decoration: underline;
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
     
     &:focus,
     &:hover,
     &:active,
     &.active {
-      opacity: .75;
+      text-decoration: underline;
     }
   }
 
